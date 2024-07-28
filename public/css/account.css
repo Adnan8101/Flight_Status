@@ -1,0 +1,75 @@
+/* General container styling */
+.account-container {
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    margin-top: 100px; /* Adjust as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Page background to match login and registration pages */
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.account-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Styling input fields */
+.account-container .input-field {
+    width: calc(100% - 20px); /* Adjust width to account for padding */
+    padding: 10px; /* Consistent padding */
+    margin: 8px 0; /* Consistent margin */
+    display: block; /* Ensure each input is on a new line */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    font-size: 16px; /* Font size */
+    background-color: rgba(255, 255, 255, 0.9); /* Background color */
+    color: #000; /* Text color */
+}
+
+/* Button container styling */
+.account-container .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Styling buttons */
+.account-container .button-container button {
+    width: 48%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.account-container .button-container button#editButton,
+.account-container .button-container button#saveButton,
+.account-container .button-container button#cancelButton {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.account-container .button-container button#homeButton {
+    background-color: #008CBA; /* Blue */
+    color: white;
+}
+
+.account-container .button-container button:hover {
+    opacity: 0.8;
+}

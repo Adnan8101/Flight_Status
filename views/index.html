@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Modi Airlines</title>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/js/common.js" defer></script>
+    <script src="/js/index.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/search" onclick="checkAuth(event)">Search</a>
+        <div id="userSection">
+            <button id="loginButton">Login</button>
+            <div id="userDropdown" class="dropdown-content">
+                <!-- This will be filled dynamically -->
+            </div>
+        </div>
+    </div>
+    <div id="errorPopup" class="error-popup">Please sign in to access this feature.</div>
+    <div class="home-container">
+        <div class="hero-section">
+            <h1>Welcome to Modi Airlines</h1>
+            <p>Experience comfort and luxury like never before. Fly with us to your favorite destinations around the world.</p>
+            <a href="/search" class="cta-button">Book a Flight</a>
+        </div>
+        <div class="features-section">
+            <div class="feature">
+                <h2>Convenient Booking</h2>
+                <p>Book your flights with ease using our user-friendly interface.</p>
+            </div>
+            <div class="feature">
+                <h2>Premium Service</h2>
+                <p>Enjoy top-notch service and amenities on all our flights.</p>
+            </div>
+            <div class="feature">
+                <h2>Global Destinations</h2>
+                <p>Travel to over 100 destinations worldwide with Modi Airlines.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

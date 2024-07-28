@@ -1,0 +1,148 @@
+/* CSS for common navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar a, .navbar button {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar button:hover, .navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+#errorPopup {
+    display: none;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: slide-down 1s forwards;
+}
+
+@keyframes slide-down {
+    0% { top: -50px; }
+    100% { top: 50px; }
+}
+
+#userDropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 5px); /* Position below the button */
+    left: 0;
+    background-color: rgba(50, 50, 50, 0.8); /* Light tone matching the website's color scheme */
+    color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+#userSection {
+    position: relative;
+}
+
+#userDropdown a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Add a separator line */
+}
+
+#userDropdown a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.show {
+    display: block;
+}
+
+/* Ensure uniform styling for all input fields */
+.input-field {
+    width: calc(100% - 20px); /* Adjust width to account for padding */
+    padding: 10px; /* Consistent padding */
+    margin: 8px 0; /* Consistent margin */
+    display: block; /* Ensure each input is on a new line */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    font-size: 16px; /* Font size */
+}
+
+/* Styling for the submit button */
+button {
+    width: calc(100% - 20px); /* Adjust width to account for padding */
+    background-color: #4CAF50; /* Background color */
+    color: white; /* Text color */
+    padding: 14px 10px; /* Consistent padding */
+    margin: 8px 0; /* Consistent margin */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Font size */
+}
+
+/* Change button color on hover */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Container styling */
+.login-container {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+}
+
+/* Center align header and paragraph text */
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+/* Dropdown styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}

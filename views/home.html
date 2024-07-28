@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Modi Airlines</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="/">Home</a>
+            <a href="/search" onclick="checkAuth(event)">Search</a>
+            <div id="userSection">
+                <button id="loginButton" onclick="window.location.href='/login'">Login</button>
+                <div id="userDropdown" class="dropdown-content">
+                    <a href="#" onclick="signOut()">Sign Out</a>
+                    <a href="/account-settings">Account Settings</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navbar">
+            <a href="/" class="logo">Modi Airlines</a>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Bringing Your Travel Dreams to Life</h1>
+                <p>Experience the best in aviation services with Modi Airlines.</p>
+                <button onclick="location.href='/search'">Search Flights</button>
+            </div>
+        </div>
+        <section class="about">
+            <div class="about-content">
+                <h2>About Modi Airlines</h2>
+                <p>When it comes to air travel, Modi Airlines covers everything from flight booking to running status updates, ensuring you have a seamless travel experience.</p>
+                <button onclick="location.href='/about'">Learn More</button>
+            </div>
+            <div class="about-image">
+                <img src="/images/about.jpg" alt="About Modi Airlines">
+            </div>
+        </section>
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <img src="/images/service1.jpg" alt="Flight Booking">
+                    <h3>Flight Booking</h3>
+                    <p>Book your flights with ease.</p>
+                </div>
+                <div class="service-card">
+                    <img src="/images/service2.jpg" alt="Running Status">
+                    <h3>Running Status</h3>
+                    <p>Check the running status of trains and flights.</p>
+                </div>
+                <div class="service-card">
+                    <img src="/images/service3.jpg" alt="Bus Booking">
+                    <h3>Bus Booking</h3>
+                    <p>Book bus tickets seamlessly.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Modi Airlines. All rights reserved.</p>
+    </footer>
+</body>
+</html>

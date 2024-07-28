@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings - Modi Airlines</title>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/account.css">
+    <script src="/js/account.js" defer></script>
+</head>
+<body>
+    <div class="account-container">
+        <h2>Account Settings</h2>
+        <form id="accountForm">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" class="input-field" readonly>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" class="input-field" readonly>
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" class="input-field" readonly>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="input-field" readonly>
+            <div class="button-container">
+                <button type="button" id="editButton">Edit</button>
+                <button type="button" id="saveButton" style="display: none;">Save</button>
+                <button type="button" id="cancelButton" style="display: none;">Cancel</button>
+                <button type="button" id="homeButton">Back to Home</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
